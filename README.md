@@ -22,7 +22,27 @@ Building a blockchain platform is like building an operating system back in the 
 
 In Java, objects are shared between units of work, and to access this piece of data, a unit of work must first obtain a lock on it. In Go, Channels are shared between units of work, and a channel is basically of a FIFO pipe — a unit of work may read or write to a channel.
 
-Go adheres to its motto of “not to communicate by sharing memory, instead share memory by communicating.”
+Go adheres to its motto of “not to communicate by sharing memory, instead share memory by communicating.”o
 And, blockchain has a wide importance of parallel actions, where, this particular feature comes very handy. Also, the ability to run a lot of functions in parallel allows programs written in Go to be run on distributed systems — a primary need of the blockchain technology. Some profound examples where Go has been adopted for its concurrency are Docker, MongoDB, Netflix, Uber etc. — companies for whom concurrency and being able to run in a distributed manner is of prime importance." https://medium.com/karachain/why-i-am-building-a-blockchain-in-go-6395a60b24dd
 
 This is just preliminary research of Go technlogy used for Blockchain Platform building. 
+
+PHASE 1
+
+The first phase of this blockchain implementation folder will be to implement Proof of Work and Proof of Stake in Javascript and Go. This includes a P2P  server and using Postman for API building and native contract building. 
+
+PHASE 2
+
+The second phase of this implementation will tackle the problems faced in phase 1 which will be it lacks the ability of mass adoption due to poor scalability without the sacrifice of it's entire design. I'll tackle this by altering the design and implementing Delegated Proof of Stake. Governance mechanisms will be made for each of problems I encounter as well as ways to implement them. 
+    Governance mechanisms:
+            BP Producer Selection
+            Weighted Votes vs Unweighted Votes
+            Use a cryptotoken to track transactions
+            Figure out defense against sybil attacks and prevention of whales
+            and more
+            
+
+PHASE 3
+
+Create the necesarry frameworks to allow for decentralized application development.
+
